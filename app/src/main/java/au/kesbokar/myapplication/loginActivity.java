@@ -42,8 +42,8 @@ public class loginActivity extends AppCompatActivity {
                 Password = edtPassword.getText().toString();
 
                 RequestQueue requestQueue = Volley.newRequestQueue(loginActivity.this);
-                String url = "https://thp.techeela.net/api/login?email="+Username+"&password="+Password;
-
+                //String url = "https://thp.techeela.net/api/login?email="+Username+"&password="+Password;
+		String url = "https://yourapi.com/api/login?email="+Username+"&password="+Password;
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, null, new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
